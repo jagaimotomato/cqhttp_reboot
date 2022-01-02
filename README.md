@@ -9,7 +9,3 @@
 - 下载代码，使用go get获取依赖
 - 修改main.go中的logPath路径以及shell中的go-cqhttp路径，如果需要邮件通知email改为true，并修改邮件配置
 - 编译后把文件丢服务器运行，命令：cd到编译文件所在的目录，使用 nohup ./cqhttp_reboot > logs/reboot.log 2>&1 & 启动
-
-###### 写在最后
-- 若有更好的方案请提出来
-- 如果这个项目对你有帮助，请给我一个star，对我非常重要，谢谢，thank you
