@@ -35,7 +35,7 @@ func main()  {
 	rs := internal.RebootService{Ch: make(chan *internal.Result), Shell: shell}
 
 	for line := range t.Lines {
-		if strings.Contains(line.Text, "账号可能被风控") {
+		if strings.Contains(line.Text, "账号可能被风控") || strings.Contains(line.Text, "打开数据库失败") {
 			go rs.Reboot()
 			select {
 			case result := <-rs.Ch:
